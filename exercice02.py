@@ -3,5 +3,9 @@ import sys
 
 argument_list = sys.argv
 
-for i in range(1, len(argument_list)):
-    print(argument_list[i])
+
+if len(argument_list) ==  1:
+    print("Veuillez rentrer au moins un argument")
+else:
+    for i in range(1, len(argument_list)):
+        print(argument_list[i])
