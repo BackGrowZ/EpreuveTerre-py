@@ -19,7 +19,7 @@ except IndexError:
 else:
     if not len(sys.argv) == 2:
         print("Veuillez rentrer une unique chaîne de caractère")
-    elif txt_user.isdigit:
+    elif txt_user.isdigit():
         print("Veuillez rentrer de chaîne correcte")
     else:
         inverser_texte(txt_user)
