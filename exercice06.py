@@ -10,7 +10,8 @@ def inverser_texte(chaine):
     for j in chaine_retournee:
         print(j, end="")
     print()
-        
+
+
 try:
     txt_user = sys.argv[1]
 except IndexError:
@@ -18,6 +19,8 @@ except IndexError:
 else:
     if not len(sys.argv) == 2:
         print("Veuillez rentrer une unique chaîne de caractère")
+    elif txt_user.isdigit:
+        print("Veuillez ne pas rentrer de chaîne composée uniquemennt de chiffres")
     else:
-       inverser_texte(txt_user)
+        inverser_texte(txt_user)
         
