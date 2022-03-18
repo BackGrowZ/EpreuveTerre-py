@@ -20,7 +20,7 @@ else:
     if not len(sys.argv) == 2:
         print("Veuillez rentrer une unique chaîne de caractère")
     elif txt_user.isdigit:
-        print("Veuillez ne pas rentrer de chaîne composée uniquemennt de chiffres")
+        print("Veuillez rentrer de chaîne correcte")
     else:
         inverser_texte(txt_user)
         
