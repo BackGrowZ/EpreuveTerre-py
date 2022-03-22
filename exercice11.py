@@ -11,11 +11,12 @@ def convertir(h, m):
     elif m < 0 or m > 60 or not len(str(m)) == 2:
         print("Veuillez rentrer une valeur correcte pour la minute")
         return        
+    
     if h <= 12:
-        resultat = str(h) + ":" + str(minute) + "AM"
+        resultat = str(h) + ":" + str(m) + "AM"
     else:
         h = h - 12
-        resultat = str(h) + ":" + str(minute) + "PM"
+        resultat = str(h) + ":" + str(m) + "PM"
     return resultat
 
 try:
