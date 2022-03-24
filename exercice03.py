@@ -9,7 +9,7 @@ try:
     arg_user = str(sys.argv[1])
     arg_pos = alphabet.index(arg_user)
 except IndexError:
-    print("Veuillez rentrer une lettre en minuscule")
+    print("Veuillez rentrer une lettre")
 except ValueError:
     print("Veuillez rentrer une lettre en minuscule")
 else:    
