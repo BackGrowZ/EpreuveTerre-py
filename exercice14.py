@@ -3,10 +3,11 @@
 import sys
 
 def est_triee(liste):
+    resultat = True
     for i in range(0, len(liste) - 1):
         if liste[i] > liste[i + 1]:
-            return False
-        return True
+            resultat = False
+    return resultat
     
 try: 
     number_list = []

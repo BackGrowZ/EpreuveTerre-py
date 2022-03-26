@@ -11,14 +11,21 @@ def convertir(h, m, am_pm):
         print("Veuillez rentrer une minute correcte")
         return        
     
+
     if am_pm:
-        resultat = str(h) + ":" + str(m)
-    else:
-        h = int(h) + 12
-        if h == 24:
-            resultat = "00:" + str(m)
+        if int(h) == 12 and int(m) == 00:
+            resultat = "00:00"
         else:
             resultat = str(h) + ":" + str(m)
+    else:
+        if int(h) == 12 and int(m) == 00:
+            resultat = "12:00"
+        else:
+            h = int(h) + 12
+            if h == 24:
+                resultat = "00:" + str(m)
+            else:
+                resultat = str(h) + ":" + str(m)
     return resultat
 
 try:

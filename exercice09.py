@@ -18,5 +18,7 @@ except IndexError:
 else:
     if nb_user < 0:
         print("Veuillez rentrer un nombre positif")
+    elif not len(sys.argv) == 2:
+        print("veuillez rentrer un unique argumennt")
     else:
         print(str(racine_carree(nb_user)))

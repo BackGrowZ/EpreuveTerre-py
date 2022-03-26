@@ -5,10 +5,10 @@ import sys
 
 def convertir(h, m):
     resultat = ""
-    if h < 0 or h > 24 or len(str(h)) > 2:
+    if h <= 0 or h > 24 or len(str(h)) > 2:
         print("Veuillez rentrer une valeur correcte pour l'heure")
         return
-    elif m < 0 or m > 60 or not len(str(m)) == 2:
+    elif m <= 0 or m > 60 or not len(str(m)) == 2:
         print("Veuillez rentrer une valeur correcte pour la minute")
         return        
     
